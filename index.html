@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="UFFinance — Liga de Mercado Financeiro da Universidade Federal Fluminense (UFF). Fundada em 2015 em Niterói, RJ, conectando teoria acadêmica e prática de mercado."
+  />
+  <title>UFFinance | Liga de Mercado Financeiro da UFF</title>
+  <link rel="icon" type="image/jpg" href="./images/logo-uffinance.jpg">
+
+
+  <!-- Fontes Institucionais (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Folha de Estilos Principal -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ========================================================================
+       CABEÇALHO E NAVEGAÇÃO FIXA (HEADER)
+       Para adicionar um novo item ao menu quando criar uma nova seção,
+       basta duplicar um <li> dentro de <ul class="nav-links">.
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand-logo" aria-label="UFFinance - Página Inicial">
+        <img src="images/logotipo.png" alt="Logotipo UFFinance" width="180" height="36" />
+      </a>
+
+      <button
+        id="menu-toggle"
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir ou fechar menu de navegação"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navegação Principal">
+        <ul class="nav-links">
+          <li><a href="#historia" class="nav-link">História</a></li>
+          <li><a href="#alumni" class="nav-link">Alumni</a></li>
+          <li><a href="#competicoes" class="nav-link">Competições</a></li>
+          <li><a href="#mercado" class="nav-link">Mercado</a></li>
+          <li><a href="#research" class="nav-link">Research</a></li>
+          <li><a href="#quem-somos" class="nav-link">Quem Somos</a></li>
+        </ul>
+        <a href="#processo-seletivo" class="btn btn--primary btn--sm">Processo Seletivo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         HERO BANNER (CABEÇALHO PRINCIPAL COM FOTO DE NITERÓI)
+         Usa <picture> para carregar automaticamente a foto vertical no celular
+         e a foto horizontal em telas maiores (tablets e computadores).
+         ====================================================================== -->
+    <section id="inicio" class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <picture>
+          <source media="(max-width: 767px)" srcset="images/niteroi-photo-vertical.jpg" />
+          <img
+            src="images/niteroi-photo-horizontal.jpg"
+            alt="Vista panorâmica de Niterói com o Museu de Arte Contemporânea (MAC)"
+          />
+        </picture>
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <h1 class="hero-title">
+          Excelência técnica e vivência prática no Mercado Financeiro.
+        </h1>
+
+        <p class="hero-subtitle">
+          Conectamos os estudantes da Universidade Federal Fluminense aos principais centros
+          financeiros do país por meio de pesquisa aplicada em Equities e Macroeconomia,
+          capacitação intensiva e participação em competições nacionais.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#processo-seletivo" class="btn btn--primary btn--lg">
+            Inscreva-se no Processo Seletivo
+          </a>
+          <a href="#historia" class="btn btn--outline-light btn--lg">
+            Conheça a UFFinance
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SEÇÃO 1: HISTÓRIA + GALERIA INSTITUCIONAL (4 FOTOS)
+         Para trocar qualquer imagem: substitua "images/elementor-placeholder-image.png"
+         pelo caminho da foto desejada dentro da pasta "images/".
+         ====================================================================== -->
+    <section id="historia" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">História</h2>
+          <p class="section-description">
+            Conheça a trajetória da liga universitária de mercado financeiro da Universidade
+            Federal Fluminense e os pilares que orientam a formação técnica dos nossos membros.
+          </p>
+        </header>
+
+        <!-- Bloco de texto institucional principal (fiel ao rascunho) -->
+        <div class="history-lead-box">
+          <p class="history-lead-text">
+            A UFFinance foi fundada em 2015 com o objetivo de conectar os alunos da UFF com o
+            mercado financeiro através da união entre teoria e prática e do aprofundamento em
+            temas poucos explorados na graduação.
+          </p>
+
+          <div class="history-pillars">
+            <div class="pillar-mini">
+              <strong>Ponte Acadêmica e Profissional</strong>
+              <span>Complementamos a base teórica da universidade com estudos de caso reais e modelagem prática.</span>
+            </div>
+            <div class="pillar-mini">
+              <strong>Cultura de Meritocracia e Estudo</strong>
+              <span>Desenvolvimento contínuo por meio de apresentações semanais, relatórios e debates técnicos.</span>
+            </div>
+            <div class="pillar-mini">
+              <strong>Comunidade Multidisciplinar</strong>
+              <span>Reunimos estudantes de Economia, Administração, Engenharias, Contábeis, Direito e áreas afins.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grade das 4 Fotos da Liga (conforme o topo do rascunho Group 1.pdf) -->
+        <div class="grid-4">
+          <figure class="photo-card">
+            <div class="photo-frame">
+              <span class="photo-tag">Institucional</span>
+              <img
+                src="images/elementor-placeholder-image.png"
+                alt="Foto institucional da UFFinance 1"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="photo-caption">
+              <h3 class="photo-title">Reuniões Gerais e Debates</h3>
+              <p class="photo-sub">Encontros periódicos no Campus do Gragoatá para discussão de mercado.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="photo-frame">
+              <span class="photo-tag">Capacitação</span>
+              <img
+                src="images/elementor-placeholder-image.png"
+                alt="Foto institucional da UFFinance 2"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="photo-caption">
+              <h3 class="photo-title">Formação Técnica Interna</h3>
+              <p class="photo-sub">Treinamentos práticos de contabilidade, valuation e conjuntura econômica.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="photo-frame">
+              <span class="photo-tag">Cases</span>
+              <img
+                src="images/elementor-placeholder-image.png"
+                alt="Foto institucional da UFFinance 3"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="photo-caption">
+              <h3 class="photo-title">Defesa de Teses e Relatórios</h3>
+              <p class="photo-sub">Apresentação de pautas de Equity Research e cenários de Macro Research.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="photo-frame">
+              <span class="photo-tag">Integração</span>
+              <img
+                src="images/elementor-placeholder-image.png"
+                alt="Foto institucional da UFFinance 4"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="photo-caption">
+              <h3 class="photo-title">Equipe e Cultura de Liga</h3>
+              <p class="photo-sub">Construção de relacionamento duradouro entre gerações de membros da UFF.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SEÇÃO 2: ALUMNI (DEPOIMENTOS DE EX-MEMBROS)
+         Para editar ou adicionar depoimentos: basta alterar os textos abaixo ou
+         duplicar um bloco <article class="testimonial-card">.
+         ====================================================================== -->
+    <section id="alumni" class="section section--alt">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Alumni</h2>
+          <p class="section-description">
+            Depoimentos de ex-membros que deram seus primeiros passos técnicos na UFFinance e
+            hoje constroem carreira em grandes instituições do mercado financeiro.
+          </p>
+        </header>
+
+        <div class="grid-4">
+          <!-- Depoimento 1 -->
+          <article class="testimonial-card">
+            <div>
+              <div class="quote-icon" aria-hidden="true">“</div>
+              <blockquote class="testimonial-quote">
+                “A passagem pela UFFinance foi determinante para minha inserção no mercado. O
+                contato precoce com modelagem financeira e a rotina de defesa de teses me deram a
+                maturidade técnica exigida nos processos seletivos mais competitivos.”
+              </blockquote>
+            </div>
+            <footer class="testimonial-author">
+              <div class="author-avatar">
+                <img src="images/elementor-placeholder-image.png" alt="Foto Alumni 1" loading="lazy" />
+              </div>
+              <div class="author-info">
+                <span class="author-name">Nome do Alumni</span>
+                <span class="author-role">Cargo / Empresa (Ex: Equity Research)</span>
+              </div>
+            </footer>
+          </article>
+
+          <!-- Depoimento 2 -->
+          <article class="testimonial-card">
+            <div>
+              <div class="quote-icon" aria-hidden="true">“</div>
+              <blockquote class="testimonial-quote">
+                “Na liga aprendi a traduzir a teoria macroeconômica da faculdade em análise
+                prática de cenários e tomada de decisão. Além da bagagem técnica, a rede de
+                alumni da UFFinance abriu portas fundamentais na minha carreira.”
+              </blockquote>
+            </div>
+            <footer class="testimonial-author">
+              <div class="author-avatar">
+                <img src="images/elementor-placeholder-image.png" alt="Foto Alumni 2" loading="lazy" />
+              </div>
+              <div class="author-info">
+                <span class="author-name">Nome do Alumni</span>
+                <span class="author-role">Cargo / Empresa (Ex: Macro / Asset)</span>
+              </div>
+            </footer>
+          </article>
+
+          <!-- Depoimento 3 -->
+          <article class="testimonial-card">
+            <div>
+              <div class="quote-icon" aria-hidden="true">“</div>
+              <blockquote class="testimonial-quote">
+                “Participar de desafios nacionais representando a UFF e visitar gestoras no Rio e
+                em São Paulo transformou minha visão profissional. A UFFinance forma profissionais
+                com rigor analítico e forte espírito de equipe.”
+              </blockquote>
+            </div>
+            <footer class="testimonial-author">
+              <div class="author-avatar">
+                <img src="images/elementor-placeholder-image.png" alt="Foto Alumni 3" loading="lazy" />
+              </div>
+              <div class="author-info">
+                <span class="author-name">Nome do Alumni</span>
+                <span class="author-role">Cargo / Empresa (Ex: Investment Banking)</span>
+              </div>
+            </footer>
+          </article>
+
+          <!-- Depoimento 4 -->
+          <article class="testimonial-card">
+            <div>
+              <div class="quote-icon" aria-hidden="true">“</div>
+              <blockquote class="testimonial-quote">
+                “O ambiente colaborativo e a exigência técnica das capacitações semanais
+                aceleraram anos de aprendizado em poucos semestres. É o melhor espaço na UFF para
+                quem deseja construir uma carreira sólida em finanças.”
+              </blockquote>
+            </div>
+            <footer class="testimonial-author">
+              <div class="author-avatar">
+                <img src="images/elementor-placeholder-image.png" alt="Foto Alumni 4" loading="lazy" />
+              </div>
+              <div class="author-info">
+                <span class="author-name">Nome do Alumni</span>
+                <span class="author-role">Cargo / Empresa (Ex: Private Equity / M&amp;A)</span>
+              </div>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SEÇÃO 3: PRINCIPAIS PARTICIPAÇÕES EM COMPETIÇÕES (2018 A 2026)
+         Como editar:
+         - Cada card possui o atributo data-year="ANO" (ex: data-year="2019").
+         - Ao clicar em um ano na barra superior, o site exibe automaticamente os
+           cards daquele ano (ou todos ao clicar em "Todos").
+         - O ano 2019 inicia ativo conforme destacado no rascunho Group 1.pdf.
+         ====================================================================== -->
+    <section id="competicoes" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Principais participações em competições</h2>
+          <p class="section-description">
+            Acompanhe por ano o desempenho das equipes da UFFinance nos principais desafios de
+            valuation, análise de investimentos, M&amp;A e conjuntura econômica do Brasil.
+          </p>
+        </header>
+
+        <!-- Barra de Anos Interativa (2018 a 2026 + Todos) -->
+        <div class="timeline-bar" role="tablist" aria-label="Filtrar competições por ano">
+          <button type="button" class="year-tab" data-year="2018" role="tab" aria-selected="false">2018</button>
+          <button type="button" class="year-tab is-active" data-year="2019" role="tab" aria-selected="true">2019</button>
+          <button type="button" class="year-tab" data-year="2020" role="tab" aria-selected="false">2020</button>
+          <button type="button" class="year-tab" data-year="2021" role="tab" aria-selected="false">2021</button>
+          <button type="button" class="year-tab" data-year="2022" role="tab" aria-selected="false">2022</button>
+          <button type="button" class="year-tab" data-year="2023" role="tab" aria-selected="false">2023</button>
+          <button type="button" class="year-tab" data-year="2024" role="tab" aria-selected="false">2024</button>
+          <button type="button" class="year-tab" data-year="2025" role="tab" aria-selected="false">2025</button>
+          <button type="button" class="year-tab" data-year="2026" role="tab" aria-selected="false">2026</button>
+          <button type="button" class="year-tab" data-year="all" role="tab" aria-selected="false">Ver Todos</button>
+        </div>
+
+        <!-- Grade de Cards de Competições -->
+        <div class="grid-4" id="competitions-grid">
+          <!-- ================= 2019 (4 cards conforme rascunho Group 1.pdf) ================= -->
+          <article class="competition-card" data-year="2019">
+            <div class="comp-header">
+              <span class="comp-year-badge">Edição 2019</span>
+            </div>
+            <div class="comp-logo-box">
+              <img src="images/elementor-placeholder-image.png" alt="Logo da competição" loading="lazy" />
+            </div>
+            <div class="comp-body">
+              <h3 class="comp-title">[Nome da Competição 1]</h3>
+              <p class="comp-category">Desafio de Equity Research &amp; Valuation</p>
+            </div>
+            <div class="comp-position">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z" />
+              </svg>
+              <span>Posição: [Ex: Finalista Nacional]</span>
+            </div>
+          </article>
+
+          <article class="competition-card" data-year="2019">
+            <div class="comp-header">
+              <span class="comp-year-badge">Edição 2019</span>
+            </div>
+            <div class="comp-logo-box">
+              <img src="images/elementor-placeholder-image.png" alt="Logo da competição" loading="lazy" />
+            </div>
+            <div class="comp-body">
+              <h3 class="comp-title">[Nome da Competição 2]</h3>
+              <p class="comp-category">Competição Nacional de Mercado de Capitais</p>
+            </div>
+            <div class="comp-position">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z" />
+              </svg>
+              <span>Posição: [Ex: Top 5 Geral]</span>
+            </div>
+          </article>
+
+          <article class="competition-card" data-year="2019">
+            <div class="comp-header">
+              <span class="comp-year-badge">Edição 2019</span>
+            </div>
+            <div class="comp-logo-box">
+              <img src="images/elementor-placeholder-image.png" alt="Logo da competição" loading="lazy" />
+            </div>
+            <div class="comp-body">
+              <h3 class="comp-title">[Nome da Competição 3]</h3>
+              <p class="comp-category">Desafio de Análise Macroeconômica</p>
+            </div>
+            <div class="comp-position">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z" />
+              </svg>
+              <span>Posição: [Ex: Destaque Regional]</span>
+            </div>
+          </article>
+
+          <article class="competition-card" data-year="2019">
+            <div class="comp-header">
+              <span class="comp-year-badge">Edição 2019</span>
+            </div>
+            <div class="comp-logo-box">
+              <img src="images/elementor-placeholder-image.png" alt="Logo da competição" loading="lazy" />
+            </div>
+            <div class="comp-body">
+              <h3 class="comp-title">[Nome da Competição 4]</h3>
+              <p class="comp-category">Case de Fusões e Aquisições (M&amp;A)</p>
+            </div>
+            <div class="comp-position">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z" />
+              </svg>
+              <span>Posição: [Ex: Semifinalista]</span>
+            </div>
+          </article>
+
+          <!-- ================= 2018 ================= -->
+          <article class="competition-card" data-year="2018" hidden>
+            <div class="comp-header">
+              <span class="comp-year-badge">Edição 2018</span>
+            </div>
+            <div class="comp-logo-box">
+              <img src="images/elementor-placeholder-image.png" alt="Logo da competição" loading="lazy" />
+            </div>
+            <div class="comp-body">
+              <h3 class="comp-title">[Competição 2018]</h3>
+              <p class="comp-category">Desafio Universitário de Finanças</p>
+            </div>
+            <div class="comp-position">
+              <span>Posição: [Inserir Posição]</span>
+            </div>
+          </article>
+
+          <!-- ================= 2020 ================= -->
+          <article class="competition-card" data-year="2020" hidden>
+            <div class="comp-header">
+              <span class="comp-year-badge">Edição 2020</span>
+            </div>
+            <div class="comp-logo-box">
+              <img src="images/elementor-placeholder-image.png" alt="Logo da competição" loading="lazy" />
+            </div>
+            <div class="comp-body">
+              <h3 class="comp-title">[Competição 2020]</h3>
+              <p class="comp-category">Desafio Universitário de Finanças</p>
+            </div>
+            <div class="comp-position">
+              <span>Posição: [Inserir Posição]</span>
+            </div>
+          </article>
+
+          <!-- ================= 2021 ================= -->
+          <article class="competition-card" data-year="2021" hidden>
+            <div class="comp-header">
+              <span class="comp-year-badge">Edição 2021</span>
+            </div>
+            <div class="comp-logo-box">
+              <img src="images/elementor-placeholder-image.png" alt="Logo da competição" loading="lazy" />
+            </div>
+            <div class="comp-body">
+              <h3 class="comp-title">[Competição 2021]</h3>
+              <p class="comp-category">Desafio Universitário de Finanças</p>
+            </div>
+            <div class="comp-position">
+              <span>Posição: [Inserir Posição]</span>
+            </div>
+          </article>
+
+          <!-- ================= 2022 ================= -->
+          <article class="competition-card" data-year="2022" hidden>
+            <div class="comp-header">
+              <span class="comp-year-badge">Edição 2022</span>
+            </div>
+            <div class="comp-logo-box">
+              <img src="images/elementor-placeholder-image.png" alt="Logo da competição" loading="lazy" />
+            </div>
+            <div class="comp-body">
+              <h3 class="comp-title">[Competição 2022]</h3>
+              <p class="comp-category">Desafio Universitário de Finanças</p>
+            </div>
+            <div class="comp-position">
+              <span>Posição: [Inserir Posição]</span>
+            </div>
+          </article>
+
+          <!-- ================= 2023 ================= -->
+          <article class="competition-card" data-year="2023" hidden>
+            <div class="comp-header">
+              <span class="comp-year-badge">Edição 2023</span>
+            </div>
+            <div class="comp-logo-box">
+              <img src="images/elementor-placeholder-image.png" alt="Logo da competição" loading="lazy" />
+            </div>
+            <div class="comp-body">
+              <h3 class="comp-title">[Competição 2023]</h3>
+              <p class="comp-category">Desafio Universitário de Finanças</p>
+            </div>
+            <div class="comp-position">
+              <span>Posição: [Inserir Posição]</span>
+            </div>
+          </article>
+
+          <!-- ================= 2024 ================= -->
+          <article class="competition-card" data-year="2024" hidden>
+            <div class="comp-header">
+              <span class="comp-year-badge">Edição 2024</span>
+            </div>
+            <div class="comp-logo-box">
+              <img src="images/elementor-placeholder-image.png" alt="Logo da competição" loading="lazy" />
+            </div>
+            <div class="comp-body">
+              <h3 class="comp-title">[Competição 2024]</h3>
+              <p class="comp-category">Desafio Universitário de Finanças</p>
+            </div>
+            <div class="comp-position">
+              <span>Posição: [Inserir Posição]</span>
+            </div>
+          </article>
+
+          <!-- ================= 2025 ================= -->
+          <article class="competition-card" data-year="2025" hidden>
+            <div class="comp-header">
+              <span class="comp-year-badge">Edição 2025</span>
+            </div>
+            <div class="comp-logo-box">
+              <img src="images/elementor-placeholder-image.png" alt="Logo da competição" loading="lazy" />
+            </div>
+            <div class="comp-body">
+              <h3 class="comp-title">[Competição 2025]</h3>
+              <p class="comp-category">Desafio Universitário de Finanças</p>
+            </div>
+            <div class="comp-position">
+              <span>Posição: [Inserir Posição]</span>
+            </div>
+          </article>
+
+          <!-- ================= 2026 ================= -->
+          <article class="competition-card" data-year="2026" hidden>
+            <div class="comp-header">
+              <span class="comp-year-badge">Edição 2026</span>
+            </div>
+            <div class="comp-logo-box">
+              <img src="images/elementor-placeholder-image.png" alt="Logo da competição" loading="lazy" />
+            </div>
+            <div class="comp-body">
+              <h3 class="comp-title">[Competição 2026]</h3>
+              <p class="comp-category">Desafio Universitário de Finanças</p>
+            </div>
+            <div class="comp-position">
+              <span>Posição: [Inserir Posição]</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SEÇÃO 4: CONTATO CONSTANTE COM O MERCADO FINANCEIRO (VISITAS TÉCNICAS)
+         ====================================================================== -->
+    <section id="mercado" class="section section--alt">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Contato constante com o mercado financeiro</h2>
+          <p class="section-description">
+            Organizamos visitas presenciais a gestoras de recursos, bancos de investimento,
+            corretoras e casas de análise no Rio de Janeiro e em São Paulo, aproximando nossos
+            membros da rotina real de tomada de decisão.
+          </p>
+        </header>
+
+        <div class="grid-4">
+          <figure class="photo-card">
+            <div class="photo-frame">
+              <span class="photo-tag">Foto Visita</span>
+              <img
+                src="images/elementor-placeholder-image.png"
+                alt="Foto de visita técnica ao mercado financeiro 1"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="photo-caption">
+              <h3 class="photo-title">Visitas a Gestoras de Recursos</h3>
+              <p class="photo-sub">Bate-papo com gestores e analistas de fundos de ações e multimercados.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="photo-frame">
+              <span class="photo-tag">Foto Visita</span>
+              <img
+                src="images/elementor-placeholder-image.png"
+                alt="Foto de visita técnica ao mercado financeiro 2"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="photo-caption">
+              <h3 class="photo-title">Bancos de Investimento</h3>
+              <p class="photo-sub">Imersão nas áreas de Investment Banking, M&amp;A, Sales &amp; Trading e Research.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="photo-frame">
+              <span class="photo-tag">Foto Visita</span>
+              <img
+                src="images/elementor-placeholder-image.png"
+                alt="Foto de visita técnica ao mercado financeiro 3"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="photo-caption">
+              <h3 class="photo-title">Encontros e Eventos de Mercado</h3>
+              <p class="photo-sub">Participação em conferências, painéis setoriais e eventos com lideranças.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <div class="photo-frame">
+              <span class="photo-tag">Foto Visita</span>
+              <img
+                src="images/elementor-placeholder-image.png"
+                alt="Foto de visita técnica ao mercado financeiro 4"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="photo-caption">
+              <h3 class="photo-title">Conexão com Alumni no Mercado</h3>
+              <p class="photo-sub">Troca de experiências de carreira diretamente nos escritórios das instituições.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SEÇÃO 5: RESEARCH E CONTEÚDOS EDUCATIVOS
+         Contém os 3 blocos previstos no rascunho:
+         1. Equity Research
+         2. Macro Research
+         3. Conteúdos Educativos ("Além de Cursos Gravados, Capacitações semanais desde o processo seletivo.")
+         ====================================================================== -->
+    <section id="research" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Research</h2>
+          <p class="section-description">
+            Nossa estrutura técnica desenvolve relatórios proprietários e capacitações contínuas,
+            unindo rigor analítico em análise de empresas, conjuntura macroeconômica e educação financeira.
+          </p>
+        </header>
+
+        <div class="grid-3">
+          <!-- Card 1: Equity Research -->
+          <article class="research-card">
+            <div class="research-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 3v18h18" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M7 14l4-4 4 4 5-6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="research-title">Equity Research</h3>
+            <p class="research-lead">Análise Fundamentalista &amp; Valuation de Empresas</p>
+            <p class="research-text">
+              Estudo aprofundado de modelos de negócios, dinâmica competitiva setorial e
+              demonstrativos financeiros de companhias listadas, com elaboração de relatórios de
+              iniciação de cobertura e valuation por Fluxo de Caixa Descontado (DCF) e múltiplos.
+            </p>
+            <ul class="research-list">
+              <li>Modelagem financeira e projeção de resultados</li>
+              <li>Valuation por DCF e Múltiplos Comparáveis</li>
+              <li>Apresentação e defesa de teses de investimento</li>
+            </ul>
+          </article>
+
+          <!-- Card 2: Macro Research -->
+          <article class="research-card">
+            <div class="research-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M3.6 9h16.8M3.6 15h16.8" />
+                <path d="M11.5 3a17 17 0 0 0 0 18M12.5 3a17 17 0 0 1 0 18" />
+              </svg>
+            </div>
+            <h3 class="research-title">Macro Research</h3>
+            <p class="research-lead">Conjuntura Econômica Nacional &amp; Internacional</p>
+            <p class="research-text">
+              Acompanhamento sistemático de política monetária, política fiscal, inflação, nível de
+              atividade e balanço de pagamentos no Brasil e nas principais economias globais,
+              avaliando impactos na curva de juros, câmbio e alocação de ativos.
+            </p>
+            <ul class="research-list">
+              <li>Análise de decisões de Bancos Centrais (Copom, Fed, BCE)</li>
+              <li>Construção de cenários e boletins de conjuntura</li>
+              <li>Estudo de indicadores de atividade, fiscal e inflação</li>
+            </ul>
+          </article>
+
+          <!-- Card 3: Conteúdos Educativos -->
+          <article class="research-card research-card--highlight">
+            <div class="research-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="research-title">Conteúdos Educativos</h3>
+            <p class="research-lead">
+              Além de cursos gravados, oferecemos capacitações semanais desde o processo seletivo até a saída do membro na liga.
+            </p>
+            <p class="research-text">
+              Trilha estruturada de formação que prepara os candidatos desde a etapa seletiva e
+              acompanha a evolução técnica dos membros com aulas gravadas, materiais próprios e
+              encontros semanais de aprofundamento.
+            </p>
+            <ul class="research-list">
+              <li>Acervo de Cursos Gravados para estudo contínuo</li>
+              <li>Capacitações semanais desde o processo seletivo</li>
+              <li>Nivelamento em Contabilidade, Finanças e Economia</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SEÇÃO 6: QUEM SOMOS? (ESTRUTURA ORGANIZACIONAL)
+         Contém todos os nomes e cargos informados no rascunho Group 1.pdf:
+         - Diretoria: Vinícius Alves e Matheus Wirz
+         - Gestão: Daniel Coutinho, Gabriel Menezes, Pedro Cordeiro e Pedro Ramos
+         - Membros Ativos: grade fácil de editar
+         - Fundadores: Bruna Nazareth, João Ricardo Gonçalves, Luís César Pereira,
+                       Tatiana Guedes e Thiago Santos
+         ====================================================================== -->
+    <section id="quem-somos" class="section section--alt">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Quem somos?</h2>
+          <p class="section-description">
+            Conheça a Diretoria, os Gestores de Área, o corpo de Membros Ativos e os
+            Fundadores que construíram a história da UFFinance.
+          </p>
+        </header>
+
+        <!-- 0. Quadro de Honra: Fundadores (2015) -->
+        <div class="org-group">
+          <div class="founders-banner">
+            <div class="founders-header">
+              <h3 class="founders-title">Fundadores da UFFinance (2015)</h3>
+              <span class="founders-subtitle">Idealizadores da Liga de Mercado Financeiro da UFF</span>
+            </div>
+
+            <ul class="founders-list">
+              <li class="founder-item">Bruna Nazareth</li>
+              <li class="founder-item">João Ricardo Gonçalves</li>
+              <li class="founder-item">Luís César Pereira</li>
+              <li class="founder-item">Tatiana Guedes</li>
+              <li class="founder-item">Thiago Santos</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 1. Diretoria Executiva -->
+        <div class="org-group">
+          <div class="org-group-header">
+            <h3 class="org-group-title">Diretoria</h3>
+            <div class="org-group-line"></div>
+          </div>
+
+          <div class="grid-2">
+            <article class="team-card">
+              <div class="team-avatar">
+                <img src="images/elementor-placeholder-image.png" alt="Foto de Vinícius Alves" loading="lazy" />
+              </div>
+              <div class="team-info">
+                <span class="team-role">Presidente</span>
+                <h4 class="team-name">Vinícius Alves</h4>
+              </div>
+            </article>
+
+            <article class="team-card">
+              <div class="team-avatar">
+                <img src="images/elementor-placeholder-image.png" alt="Foto de Matheus Wirz" loading="lazy" />
+              </div>
+              <div class="team-info">
+                <span class="team-role">Vice-presidente</span>
+                <h4 class="team-name">Matheus Wirz</h4>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- 2. Gestão de Áreas -->
+        <div class="org-group">
+          <div class="org-group-header">
+            <h3 class="org-group-title">Gestão</h3>
+            <div class="org-group-line"></div>
+          </div>
+
+          <div class="grid-4">
+            <article class="team-card">
+              <div class="team-avatar">
+                <img src="images/elementor-placeholder-image.png" alt="Foto de Daniel Coutinho" loading="lazy" />
+              </div>
+              <div class="team-info">
+                <span class="team-role">Equities</span>
+                <h4 class="team-name">Daniel Coutinho</h4>
+              </div>
+            </article>
+
+            <article class="team-card">
+              <div class="team-avatar">
+                <img src="images/elementor-placeholder-image.png" alt="Foto de Gabriel Menezes" loading="lazy" />
+              </div>
+              <div class="team-info">
+                <span class="team-role">Macro</span>
+                <h4 class="team-name">Gabriel Menezes</h4>
+              </div>
+            </article>
+
+            <article class="team-card">
+              <div class="team-avatar">
+                <img src="images/elementor-placeholder-image.png" alt="Foto de Pedro Cordeiro" loading="lazy" />
+              </div>
+              <div class="team-info">
+                <span class="team-role">Relações Institucionais</span>
+                <h4 class="team-name">Pedro Cordeiro</h4>
+              </div>
+            </article>
+
+            <article class="team-card">
+              <div class="team-avatar">
+                <img src="images/elementor-placeholder-image.png" alt="Foto de Pedro Ramos" loading="lazy" />
+              </div>
+              <div class="team-info">
+                <span class="team-role">Recursos Humanos</span>
+                <h4 class="team-name">Pedro Ramos</h4>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- 3. Lista de Membros Ativos (Basta duplicar um <li class="member-pill"> para adicionar novos membros) -->
+        <div class="org-group">
+          <div class="org-group-header">
+            <h3 class="org-group-title">Membros Ativos</h3>
+            <div class="org-group-line"></div>
+          </div>
+
+          <div class="members-box">
+            <ul class="members-grid" aria-label="Lista de membros ativos da UFFinance">
+              <li class="member-pill"><span class="member-pill-dot"></span><span>[Membro Ativo 1]</span></li>
+              <li class="member-pill"><span class="member-pill-dot"></span><span>[Membro Ativo 2]</span></li>
+              <li class="member-pill"><span class="member-pill-dot"></span><span>[Membro Ativo 3]</span></li>
+              <li class="member-pill"><span class="member-pill-dot"></span><span>[Membro Ativo 4]</span></li>
+              <li class="member-pill"><span class="member-pill-dot"></span><span>[Membro Ativo 5]</span></li>
+              <li class="member-pill"><span class="member-pill-dot"></span><span>[Membro Ativo 6]</span></li>
+              <li class="member-pill"><span class="member-pill-dot"></span><span>[Membro Ativo 7]</span></li>
+              <li class="member-pill"><span class="member-pill-dot"></span><span>[Membro Ativo 8]</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SEÇÃO 7: PROCESSO SELETIVO
+         Para atualizar o link do Google Forms no futuro, basta substituir a URL
+         no atributo href="" do botão "Inscreva-se no Processo Seletivo" abaixo.
+         ====================================================================== -->
+    <section id="processo-seletivo" class="section section--dark">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Processo Seletivo</h2>
+          <p class="section-description">
+            Buscamos estudantes da UFF comprometidos, proativos e interessados em construir uma
+            carreira de alto impacto no mercado financeiro. Oferecemos capacitações semanais desde
+            o processo seletivo.
+          </p>
+        </header>
+
+        <div class="ps-wrapper">
+          <!-- Etapas do Processo Seletivo -->
+          <div class="ps-steps">
+            <div class="ps-step-card">
+              <span class="ps-step-number">Etapa 01</span>
+              <h3 class="ps-step-title">Inscrição Online</h3>
+              <p class="ps-step-desc">
+                Preenchimento do formulário eletrônico de inscrição pelos estudantes de graduação da UFF.
+              </p>
+            </div>
+
+            <div class="ps-step-card">
+              <span class="ps-step-number">Etapa 02</span>
+              <h3 class="ps-step-title">Dinâmica em Grupo</h3>
+              <p class="ps-step-desc">
+                Resolução de um estudo de caso em equipe, com apresentação e defesa das soluções propostas.
+              </p>
+            </div>
+
+            <div class="ps-step-card">
+              <span class="ps-step-number">Etapa 03</span>
+              <h3 class="ps-step-title">Entrevista Individual</h3>
+              <p class="ps-step-desc">
+                Avaliação individual das competências e motivações dos candidatos.
+              </p>
+            </div>
+
+            <div class="ps-step-card">
+              <span class="ps-step-number">Etapa 04</span>
+              <h3 class="ps-step-title">Trainee</h3>
+              <p class="ps-step-desc">
+                Participação em atividades práticas e projetos reais sob orientação de gestores da UFFinance.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card de Inscrição (Botão redireciona para Google Forms) -->
+          <div class="ps-cta-box">
+            <h3 class="ps-cta-title">Faça parte da Liga de Mercado Financeiro da UFF</h3>
+            <p class="ps-cta-text">
+              Clique no botão abaixo para acessar o formulário oficial de inscrição no Google Forms
+              e iniciar sua jornada na UFFinance.
+            </p>
+
+            <!-- EDITE AQUI O LINK DO FORMULÁRIO GOOGLE FORMS -->
+            <a
+              href="https://docs.google.com/forms/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--primary btn--lg"
+            >
+              <span>Inscreva-se no Processo Seletivo</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M17 7H7M17 7V17" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+
+            <p class="ps-cta-note">
+              Dúvidas sobre o edital ou etapas? Envie um e-mail para
+              <strong>rh.uffinance@gmail.com</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         MODELO PRONTO PARA CRIAR NOVAS SEÇÕES FUTURAMENTE (MANTIDO COMENTADO)
+         Para adicionar uma nova seção sem perder a responsividade:
+         1. Copie o bloco <section>...</section> abaixo (sem os símbolos de comentário).
+         2. Cole acima ou abaixo de qualquer seção existente.
+         3. Escolha a classe "section" (fundo branco) ou "section section--alt" (fundo cinza claro).
+         4. Escolha a grade desejada: "grid-2", "grid-3" ou "grid-4".
+
+    <section id="nova-secao" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Título da Nova Seção</h2>
+          <p class="section-description">
+            Breve descrição abaixo do título explicando o objetivo desta nova seção.
+          </p>
+        </header>
+
+        <div class="grid-3">
+          <article class="research-card">
+            <h3 class="research-title">Título do Card 1</h3>
+            <p class="research-text">Texto descritivo do card.</p>
+          </article>
+          <article class="research-card">
+            <h3 class="research-title">Título do Card 2</h3>
+            <p class="research-text">Texto descritivo do card.</p>
+          </article>
+          <article class="research-card">
+            <h3 class="research-title">Título do Card 3</h3>
+            <p class="research-text">Texto descritivo do card.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+         ====================================================================== -->
+  </main>
+
+  <!-- ========================================================================
+       RODAPÉ INSTITUCIONAL (FOOTER)
+       Contém o endereço oficial no Campus Gragoatá e o e-mail do RH da liga.
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logotipo.png" alt="Logotipo UFFinance" width="170" height="34" loading="lazy" />
+          <p>
+            Liga de Mercado Financeiro da Universidade Federal Fluminense (UFF). Conectando teoria
+            e prática na formação de talentos desde 2015.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Navegação</h3>
+          <ul class="footer-list">
+            <li><a href="#historia">História</a></li>
+            <li><a href="#alumni">Alumni</a></li>
+            <li><a href="#competicoes">Participações em Competições</a></li>
+            <li><a href="#mercado">Contato com o Mercado</a></li>
+            <li><a href="#research">Research e Conteúdos</a></li>
+            <li><a href="#quem-somos">Quem Somos</a></li>
+            <li><a href="#processo-seletivo">Processo Seletivo</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Localização e Contato</h3>
+          <ul class="footer-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>
+                Universidade Federal Fluminense - Campus Gragoatá, Prédio F, Sala 401<br />
+                Niterói - RJ
+              </span>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M22 6l-10 7L2 6" />
+              </svg>
+              <a href="mailto:rh.uffinance@gmail.com">rh.uffinance@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> UFFinance — Liga de Mercado Financeiro da UFF. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>
